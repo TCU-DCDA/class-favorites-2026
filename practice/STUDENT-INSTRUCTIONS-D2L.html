@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Favorites: Build It Together · WRIT 40363</title>
+</head>
+<body style="margin:0; background:#ffffff; color:#172033; font-family:Arial, Helvetica, sans-serif; line-height:1.65;">
+<!-- For an existing D2L page, copy the article below into its HTML/source editor. -->
+<article style="max-width:780px; margin:0 auto; padding:24px 16px 40px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#172033; background:#ffffff; overflow-wrap:break-word;">
+  <header style="border-top:6px solid #4d1979; padding-top:20px; margin-bottom:24px;">
+    <p style="margin:0 0 8px; color:#5c4770; font-size:14px; font-weight:bold;">WRIT 40363 &middot; September 21, 2026 &middot; In-class collaboration</p>
+    <h1 style="margin:0 0 14px; font-size:32px; line-height:1.2; color:#4d1979;">Class Favorites: Build It Together</h1>
+    <p style="margin:0 0 14px;">We will build one class favorites list together on the projector. You supply a favorite place; your instructor turns the submissions into JavaScript objects, adds the functions, and runs the page. Together, we will predict what should happen and troubleshoot what we see.</p>
+    <p style="margin:0; padding:16px; border-left:4px solid #4d1979; background:#f4f1f8;"><strong>Your role:</strong> contribute, observe, ask questions, and explain what the code is doing. You do not need to download files or write code during this shared activity.</p>
+  </header>
+
+  <section aria-labelledby="send-favorite" style="margin-bottom:28px;">
+    <h2 id="send-favorite" style="margin:0 0 12px; font-size:23px; line-height:1.3; color:#4d1979;">1. Send one favorite</h2>
+    <p style="margin:0 0 14px;">Open the <a href="https://docs.google.com/document/d/1DQZmCIhYY05t5Q0gKIQ4romrFu7_4yeaRGMT1qG1Cqo/edit?usp=sharing" style="color:#4d1979; text-decoration:underline; font-weight:bold;">shared Class Favorites Google Doc</a>. Add your favorite at the bottom, below the existing entries, and leave your classmates&rsquo; contributions in place.</p>
+    <ul style="margin:0 0 16px; padding-left:24px;">
+      <li style="margin-bottom:8px;"><strong>name:</strong> the name of a place you recommend.</li>
+      <li style="margin-bottom:8px;"><strong>category:</strong> choose <code>dessert</code>, <code>study</code>, <code>coffee</code>, <code>outdoors</code>, or <code>food</code>.</li>
+      <li><strong>why:</strong> one short phrase explaining why a classmate might want to visit.</li>
+    </ul>
+    <div style="padding:16px 20px; background:#f4f1f8; border:1px solid #ddd4e7; border-radius:8px;">
+      <p style="margin:0 0 8px; font-weight:bold;">Example submission</p>
+      <p style="margin:0;"><strong>name:</strong> Campus Library<br><strong>category:</strong> study<br><strong>why:</strong> quiet tables upstairs</p>
+    </div>
+    <p style="margin:14px 0 0;">Submit ordinary text. Your instructor will add the JavaScript punctuation. If you cannot open the submission link, give your example aloud when invited.</p>
+  </section>
+
+  <section aria-labelledby="build-object" style="margin-bottom:28px;">
+    <h2 id="build-object" style="margin:0 0 12px; font-size:23px; line-height:1.3; color:#4d1979;">2. Watch a submission become an object</h2>
+    <p style="margin:0 0 12px;">Our example can become:</p>
+    <pre style="margin:0 0 16px; padding:16px; background:#f4f1f8; border:1px solid #ddd4e7; border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:15px; line-height:1.6;"><code>{
+  name: 'Campus Library',
+  category: 'study',
+  why: 'quiet tables upstairs'
+}</code></pre>
+    <p style="margin:0 0 10px;">As your instructor builds the list, discuss:</p>
+    <ul style="margin:0 0 14px; padding-left:24px;">
+      <li>Which parts are property names? Which parts are values?</li>
+      <li>Why should every object use the same property names?</li>
+      <li>What separates one object from the next in the array?</li>
+      <li>If the array has three objects, how many cards should we expect?</li>
+    </ul>
+    <p style="margin:0;">The shared document collects our examples. It does not automatically update the app; watch how your instructor translates a submission into an object.</p>
+  </section>
+
+  <section aria-labelledby="predict" style="margin-bottom:28px;">
+    <h2 id="predict" style="margin:0 0 12px; font-size:23px; line-height:1.3; color:#4d1979;">3. Predict before we run the code</h2>
+    <p style="margin:0 0 12px;">First we will have data. Then your instructor will add the code that displays it. Before each refresh or function call, predict what will change on the page. Be ready to explain:</p>
+    <ul style="margin:0; padding-left:24px;">
+      <li>Why having an array does not, by itself, put cards on the page.</li>
+      <li>What <code>displayFavorites()</code> does.</li>
+      <li>Why rendering clears the old cards before drawing the list again.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="troubleshoot" style="margin-bottom:28px;">
+    <h2 id="troubleshoot" style="margin:0 0 12px; font-size:23px; line-height:1.3; color:#4d1979;">4. Troubleshoot together</h2>
+    <p style="margin:0 0 12px;">When something looks wrong, describe what you expected and what actually happened. Then suggest one place to look in the code.</p>
+    <p style="margin:0 0 12px;">We may compare a property name with the renderer, inspect capitalization or spaces, or read a console error. Some mistakes stop the code; others produce a page that looks almost right.</p>
+    <p style="margin:0;">Your instructor may introduce a prepared mistake for discussion. You do not need to put deliberate errors in your own submission.</p>
+  </section>
+
+  <section aria-labelledby="explain" style="margin-bottom:28px;">
+    <h2 id="explain" style="margin:0 0 12px; font-size:23px; line-height:1.3; color:#4d1979;">5. Explain what changed</h2>
+    <p style="margin:0 0 12px;">When we add another favorite, watch for two separate actions:</p>
+    <p style="margin:0 0 16px; padding:16px; background:#f4f1f8; border-left:4px solid #4d1979; font-size:19px;"><strong>Change the array &rarr; call the rendering function.</strong></p>
+    <p style="margin:0;"><strong>Closing question:</strong> How did a classmate&rsquo;s submission become a card, and what would you check if the card were missing or incorrect?</p>
+  </section>
+
+  <section aria-labelledby="after" style="border-top:1px solid #ddd4e7; padding-top:20px;">
+    <h2 id="after" style="margin:0 0 12px; font-size:23px; line-height:1.3; color:#4d1979;">After the shared exercise</h2>
+    <p style="margin:0 0 12px;">When directed, open your own Project 2 tracker and follow <a href="https://tcu-dcda.github.io/WRIT40363_2026/labs/lab13_5.html" style="color:#4d1979; text-decoration:underline; font-weight:bold;">LAB13.5: Arrays, Adding &amp; Rendering</a>. There, a form builds the object from what a user types. Your tracker uses additional fields, so follow the lab&rsquo;s names rather than copying the class example over your existing work.</p>
+    <p style="margin:0;">No separate submission is needed for the shared demonstration. LAB13.5 is due <strong>Tuesday, September 22, at 11:59 p.m.</strong> Submit your tracker repository URL in its D2L dropbox.</p>
+  </section>
+</article>
+</body>
+</html>

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class Favorites &middot; WRIT 40363</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="practice/practice.css">
+  <title>Class Favorites Practice · WRIT 40363</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="practice.css">
 </head>
 <body>
   <header>
-    <h1>Class Favorites &middot; WRIT 40363</h1>
+    <h1>Class Favorites Practice</h1>
+    <p>Add a place and explain why you recommend it. Changes reset when you refresh.</p>
   </header>
-
   <main>
     <form id="add-favorite-form">
       <label for="name">Place name</label>
@@ -32,9 +32,11 @@
       <button type="submit">Add Favorite</button>
     </form>
 
-    <div id="favorites-list"></div>
+    <div id="favorites-list" aria-live="polite"></div>
   </main>
 
-  <script src="app.js"></script>
+  <!-- Load exactly one dataset. Switch to favorites-clean.js for recovery. -->
+  <script src="favorites-debug.js"></script>
+  <script src="functions.js"></script>
 </body>
 </html>
